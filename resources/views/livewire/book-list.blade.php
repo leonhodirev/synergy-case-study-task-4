@@ -2,19 +2,19 @@
 
 <div>
     <div class="mb-4 flex flex-wrap gap-2">
-        <button wire:click="sortBy('category')" class="px-3 py-1 border rounded {{ $sortField==='category' ? 'bg-blue-600 text-white' : 'bg-gray-100' }}">
+        <button wire:click="sortBy('category')" class="px-3 py-1 border rounded {{ $sortField==='category' ? 'bg-blue-600 text-white' : '' }}">
             Категория
             @if($sortField === 'category')
                 @if($sortDirection === 'asc') &uarr; @else &darr; @endif
             @endif
         </button>
-        <button wire:click="sortBy('author')" class="px-3 py-1 border rounded {{ $sortField==='author' ? 'bg-blue-600 text-white' : 'bg-gray-100' }}">
+        <button wire:click="sortBy('author')" class="px-3 py-1 border rounded {{ $sortField==='author' ? 'bg-blue-600 text-white' : '' }}">
             Автор
             @if($sortField === 'author')
                 @if($sortDirection === 'asc') &uarr; @else &darr; @endif
             @endif
         </button>
-        <button wire:click="sortBy('year')" class="px-3 py-1 border rounded {{ $sortField==='year' ? 'bg-blue-600 text-white' : 'bg-gray-100' }}">
+        <button wire:click="sortBy('year')" class="px-3 py-1 border rounded {{ $sortField==='year' ? 'bg-blue-600 text-white' : '' }}">
             Год написания
             @if($sortField === 'year')
                 @if($sortDirection === 'asc') &uarr; @else &darr; @endif

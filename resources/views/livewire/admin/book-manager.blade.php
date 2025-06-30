@@ -7,7 +7,7 @@
     <div class="overflow-x-auto">
         <table class="min-w-full border border-gray-300" style="width: 100%;">
             <thead>
-            <tr class="bg-gray-100">
+            <tr>
                 <th class="px-3 py-2 border">ID</th>
                 <th class="px-3 py-2 border">Название</th>
                 <th class="px-3 py-2 border">Автор</th>
